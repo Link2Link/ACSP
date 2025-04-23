@@ -29,7 +29,7 @@ namespace ACSP::LTI::SISO
 
      */
     template <size_t N,
-            typename = std::enable_if_t<is_less_or_equal<2, N>::value>>
+            typename = std::enable_if_t<is_less_or_equal<1, N>::value>>
     class tf
     {
     public:
