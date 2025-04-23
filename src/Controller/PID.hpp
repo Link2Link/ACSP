@@ -8,6 +8,12 @@ namespace ACSP::Controller
 {
     namespace LTI = ACSP::LTI;
 
+    /*
+     *  本PID的传递函数形式为：
+     *  u(t)=K_pe(t)+K_i\int_0^te(\tau)d\tau+\frac{K_ds}{T_fs+1}e(t)
+     *  这个控制器实现的是带积分饱和、惯性微分的PID
+     *
+     */
     class PID
     {
     public:
